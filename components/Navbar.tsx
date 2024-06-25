@@ -14,7 +14,7 @@ import dot2 from "../public/dot2.png"
 
 const Navbar = () => {
     return (
-        <div className=' w-full h-[116.14px] bg-[#ffffff]  relative flex justify-center items-center shadow-custom font-poppins'>
+        <div className=' w-full h-[116.14px] bg-[#ffffff] sticky top-0  left-0 flex justify-center items-center shadow-custom font-poppins z-10'>
 
             <div className=' w-full h-[61px] pl-[40px] pr-[24px] mt-[20.24px] mb-[17.05px] flex justify-between items-center bg-[#FFFFFF] absolute '>
                 <div className=' w-[100px] h-[61px] flex justify-center items-center gap-[10px] py-[9px] px-7 bg-[#E7E7E7]'>
