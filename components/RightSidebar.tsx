@@ -7,7 +7,7 @@ import avatar from "../public/Avatar.png"
 
 const RightSidebar = () => {
     return (
-        <div className='flex flex-col justify-start items-center w-[421px] h-[135vh]  bg-[#FCFCFC] font-poppins stick right-0 top-0 border-t border-l border-[#E7E7E7] pl-[49px] pr-[12px]'>
+        <div className='flex flex-col justify-start items-center w-[421px] h-screen  bg-[#FCFCFC] font-poppins stick right-0 top-0 border-t border-l border-[#E7E7E7] pl-[49px] pr-[12px] '>
             <div className='w-[360px] h-[351px] flex justify-center items-center flex-col gap-[24px] mt-[36px]'>
                 <div className=' flex gap-[16px]'>
                     <button className=' w-[172px] h-[44px] bg-[#FEF4F2] rounded-[8px] border-[0.8px] border-[#DC4A2D] py-3 px-6 flex gap-[8px] text-[#DC4A2D] justify-center items-center'>
