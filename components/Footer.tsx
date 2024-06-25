@@ -32,7 +32,6 @@ const Footer = () => {
                 </div>
 
                 <div className=' flex flex-col mt-4'>
-
                     <div className=' w-[344px] flex flex-col justify-start mb-[24px]'>
                         <h3 className=' text-[14px] leading-[21px] font-normal text-[#6E6D6D]'>Type</h3>
                         <p className='font-normal text-[16px] leading-[24px] text-[#3D3D3D]'>Private</p>
