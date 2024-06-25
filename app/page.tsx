@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { homeLinks } from "@/constants";
@@ -7,14 +8,20 @@ import smallDot from "../public/smallDot.png";
 import greenDot from "../public/greenDot.png";
 import marker from "../public/marker.png"
 import stack from "../public/coins-stacked-03.png"
-import figma from "../public/figma.png"
-import Ai from "../public/Ai.png"
-import Xd from "../public/Xd.png"
 import Skills from "@/components/Skills";
 import AboutJob from "@/components/AboutJob";
 import Footer from "@/components/Footer";
+import React from "react";
 
 export default function Home() {
+  React.useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col items-center">
       <Navbar />
@@ -30,12 +37,10 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div className="flex w-full h-screen">
-        <div className="w-full">
-
+      <div className="flex w-full h-[80vh]">
+        <div className="w-full overflow-y-scroll custom-scrollbar">
           <section className=" w-full flex flex-col gap-[24px]  ">
             <div className="flex flex-col gap-[24px] pb-[20px] border-b-[1px] border-[#E7E7E7]">
-
               <div className=" flex justify-start items-center  gap-[12px] h-[27px] mt-[36px] ml-[100px]">
                 <span className=" font-bold text-[#3D3D3D] text-[35px] leading-[52.5px] ">Senior Product Designer</span>
                 <Image src={smallDot} alt="gray-dot" width={4} height={4} />
@@ -58,7 +63,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
           <Skills />
           <AboutJob />
           <Footer />
