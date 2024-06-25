@@ -8,7 +8,7 @@ import avatar from "../public/Avatar.png"
 const RightSidebar = () => {
     return (
         <div className='flex flex-col justify-start items-center w-[421px] h-screen  bg-[#FCFCFC] font-poppins stick right-0 top-0 border-t border-l border-[#E7E7E7] pl-[49px] pr-[12px] '>
-            <div className='w-[360px] h-[351px] flex justify-center items-center flex-col gap-[24px] mt-[36px]'>
+            <div className='w-[360px] h-[351px] flex justify-center items-center flex-col gap-[24px] mt-[36px] mr-[12px]'>
                 <div className=' flex gap-[16px]'>
                     <button className=' w-[172px] h-[44px] bg-[#FEF4F2] rounded-[8px] border-[0.8px] border-[#DC4A2D] py-3 px-6 flex gap-[8px] text-[#DC4A2D] justify-center items-center'>
                         <Image src={trash} alt='trash' width={15} height={15} />
@@ -38,7 +38,7 @@ const RightSidebar = () => {
                     })}
                 </div>
             </div>
-            <div className=' w-[385px] h-[196px] bg-[#FFFFFF] border-[1px] shadow-custom3 rounded-[12px] mt-[38.47px] border-[#F7F7F7] flex flex-col justify-start p-[32px]'>
+            <div className=' w-[385px] h-[196px] bg-[#FFFFFF] border-[1px] shadow-custom3 rounded-[12px] mt-[38.47px] mr-[12px] border-[#F7F7F7] flex flex-col justify-start p-[32px]'>
                 <span className=' text-[#000] text-[20px] font-medium leading-[30px] '>“A quote from a Atlassian.”</span>
                 <div className=' flex justify-start items-center gap-[16px] mt-[48px]'>
                     <Image src={avatar} alt='img' width={45} height={45} />
